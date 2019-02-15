@@ -1,5 +1,14 @@
-#!/usr/bin/python
-import sys
-sys.path.insert(0,"/var/www/azrael/")
+#!/usr/bin/python3
 
-from azrael import app as application
+import sys
+
+import logging
+
+logging.basicConfig(stream=sys.stderr)
+
+sys.path.insert(0,'/var/www/azrael/')
+
+
+
+from azrael import app as application 
+
