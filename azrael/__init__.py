@@ -6,7 +6,7 @@ from urllib.request import Request, urlopen
 
 from flask import Flask, render_template, request, session, url_for, redirect, flash
 
-from azrael.util import db as db
+from .util import db as db
 
 app = Flask(__name__)
 
@@ -384,4 +384,4 @@ def study(quizid):
 
 if __name__ == "__main__":
     app.debug = True
-    app.run()
+    app.run(host='0.0.0.0')
