@@ -6,7 +6,7 @@ from urllib.request import Request, urlopen
 
 from flask import Flask, render_template, request, session, url_for, redirect, flash
 
-from util import db as db
+from azrael.util import db as db
 
 app = Flask(__name__)
 
